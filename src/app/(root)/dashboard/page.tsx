@@ -151,7 +151,7 @@ export default function DashboardPage() {
               config={{
                 visitors: { label: "Visitors", color: "hsl(var(--chart-1))" },
               }}
-              className="h-[320px]"
+              className="h-[320px] w-full"
             >
               <ResponsiveContainer width="100%" height="100%">
                 <LineChart
@@ -166,7 +166,7 @@ export default function DashboardPage() {
                   <Line
                     type="monotone"
                     dataKey="visitors"
-                    stroke="var(--color-visitors, var(--color-chart-1))"
+                    stroke="black"
                     name="Visitors"
                   />
                 </LineChart>
